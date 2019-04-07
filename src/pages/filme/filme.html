@@ -1,0 +1,13 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Filmes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-card *ngFor="let fi of filme" (click)="detalhe(fi)">
+    <img src="{{fi.imagem}}"/>
+    <ion-card-title>{{fi.nome}}</ion-card-title>
+  </ion-card>
+</ion-content>
