@@ -14,6 +14,7 @@ export class FilmeDetalhePage {
   
   constructor(public navCtrl: NavController,
     public navParams: NavParams) {
+
     this.filme = this.navParams.get('filme');
 
   }
